@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "pnpm prepare & panda & vite",
+    "dev": "pnpm prepare & vite",
     "build": "panda & vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
