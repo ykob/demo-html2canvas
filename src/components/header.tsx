@@ -13,9 +13,6 @@ export function Header({ className, ...props }: HeaderProps) {
 
 const styles = {
   wrap: css({
-    backgroundColor: "red",
-    color: "white",
-    padding: "1rem",
-    textAlign: "center",
+    fontSize: "4xl",
   }),
 };
