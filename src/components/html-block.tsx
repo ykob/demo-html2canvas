@@ -12,5 +12,11 @@ export function HtmlBlock({ className, ...props }: HtmlBlockProps) {
 }
 
 const styles = {
-  wrap: css({}),
+  wrap: css({
+    rounded: "md",
+    overflow: "auto",
+    p: 4,
+    color: "black",
+    bg: "white",
+  }),
 };

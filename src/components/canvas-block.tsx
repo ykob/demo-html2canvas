@@ -13,5 +13,11 @@ export function CanvasBlock({ className, ...props }: CanvasBlockProps) {
 }
 
 const styles = {
-  wrap: css({}),
+  wrap: css({
+    rounded: "md",
+    overflow: "auto",
+    p: 4,
+    color: "black",
+    bg: "white",
+  }),
 };
