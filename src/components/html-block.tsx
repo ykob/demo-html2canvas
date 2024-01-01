@@ -1,22 +1,8 @@
 import { ComponentProps } from "react";
-import { css, cx } from "styled-system/css";
+import { LayoutBlock } from "./";
 
 type HtmlBlockProps = ComponentProps<"div">;
 
-export function HtmlBlock({ className, ...props }: HtmlBlockProps) {
-  return (
-    <div {...props} className={cx(styles.wrap, className)}>
-      HtmlBlock
-    </div>
-  );
+export function HtmlBlock({ ...props }: HtmlBlockProps) {
+  return <LayoutBlock {...props}>HtmlBlock</LayoutBlock>;
 }
-
-const styles = {
-  wrap: css({
-    rounded: "md",
-    overflow: "auto",
-    p: 4,
-    color: "black",
-    bg: "white",
-  }),
-};
