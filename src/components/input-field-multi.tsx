@@ -1,15 +1,17 @@
 import { ComponentProps } from "react";
 import { css, cx } from "styled-system/css";
 
-type InputFieldProps = ComponentProps<"input">;
+type InputFieldMultiProps = ComponentProps<"textarea">;
 
-export function InputField({
+export function InputFieldMulti({
   className,
-  type = "text",
+  children,
   ...props
-}: InputFieldProps) {
+}: InputFieldMultiProps) {
   return (
-    <input type={type} {...props} className={cx(styles.wrap, className)} />
+    <textarea {...props} className={cx(styles.wrap, className)}>
+      {children}
+    </textarea>
   );
 }
 
@@ -17,8 +19,8 @@ const styles = {
   wrap: css({
     boxSizing: "border-box",
     width: "100%",
-    height: "2em",
-    px: 2,
+    height: "8em",
+    p: 2,
     border: "1px solid",
     rounded: "sm",
   }),
