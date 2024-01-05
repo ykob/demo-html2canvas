@@ -1,5 +1,6 @@
 export * from "./canvas-block";
 export * from "./form-block";
+export * from "./form-item";
 export * from "./header";
 export * from "./html-block";
 export * from "./input-field";
