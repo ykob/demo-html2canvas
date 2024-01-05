@@ -1,5 +1,5 @@
 import { ComponentProps } from "react";
-import { InputField, InputFieldMulti, LayoutBlock, FormItem } from "./";
+import { Button, InputField, InputFieldMulti, LayoutBlock, FormItem } from "./";
 import { css } from "styled-system/css";
 
 type FormBlockProps = ComponentProps<"div">;
@@ -17,6 +17,9 @@ export function FormBlock({ ...props }: FormBlockProps) {
         <FormItem label="Content">
           <InputFieldMulti></InputFieldMulti>
         </FormItem>
+        <div>
+          <Button>Submit</Button>
+        </div>
       </form>
     </LayoutBlock>
   );

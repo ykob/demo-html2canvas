@@ -1,3 +1,4 @@
+export * from "./button";
 export * from "./canvas-block";
 export * from "./form-block";
 export * from "./form-item";
