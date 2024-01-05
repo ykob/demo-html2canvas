@@ -17,7 +17,8 @@ export function FormBlock({ ...props }: FormBlockProps) {
         <FormItem label="Content">
           <InputFieldMulti></InputFieldMulti>
         </FormItem>
-        <div>
+        <div className={styles.buttons}>
+          <Button>Reset</Button>
           <Button>Submit</Button>
         </div>
       </form>
@@ -30,5 +31,10 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: 4,
+  }),
+  buttons: css({
+    display: "flex",
+    justifyContent: "flex-end",
+    gap: 2,
   }),
 };

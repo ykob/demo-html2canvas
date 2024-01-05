@@ -14,7 +14,7 @@ export function Button({ children, className, ...props }: ButtonProps) {
 const styles = {
   wrap: css({
     height: 10,
-    px: 4,
+    px: 6,
     rounded: "md",
     color: "white",
     bg: "blue.700",
