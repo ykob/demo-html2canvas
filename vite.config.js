@@ -15,4 +15,7 @@ export default defineConfig({
       "styled-system": path.resolve(__dirname, "./styled-system/"),
     },
   },
+  server: {
+    host: true,
+  },
 });
