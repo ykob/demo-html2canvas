@@ -18,8 +18,8 @@ export function FormBlock({ ...props }: FormBlockProps) {
           <InputFieldMulti></InputFieldMulti>
         </FormItem>
         <div className={styles.buttons}>
-          <Button>Reset</Button>
           <Button>Submit</Button>
+          <Button buttonColor="secondary">Reset</Button>
         </div>
       </form>
     </LayoutBlock>
@@ -34,7 +34,8 @@ const styles = {
   }),
   buttons: css({
     display: "flex",
-    justifyContent: "flex-end",
+    flexDirection: "row-reverse",
+    justifyContent: "flex-start",
     gap: 2,
   }),
 };
