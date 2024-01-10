@@ -1,5 +1,5 @@
 import { ComponentProps } from "react";
-import { css, cva, cx } from "styled-system/css";
+import { cva, cx } from "styled-system/css";
 
 type ButtonProps = ComponentProps<"button"> & {
   buttonColor?: "primary" | "secondary";
